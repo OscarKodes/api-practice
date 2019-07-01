@@ -7,15 +7,13 @@
   <body>
 
     <h1>API PRACTICE</h1>
-    
 
-    <% for (let key in sprites) { %>
-      <% let url = sprites[key]; %>
-
-      <% if (url !== null) { %>
-        <img src="<%= url %>" alt="">
-      <% } %>
-    <% } %>
+    <form class="" action="/results" method="get">
+      <label>Enter Pokemon National ID Number:
+      <input type="number" name="id" value="" min="1" max="807">
+      </label>
+      <input type="submit" name="" value="Submit">
+    </form>
 
   </body>
 </html>
